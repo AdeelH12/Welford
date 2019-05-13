@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*** Reusable Components ***/
+
+.row{
+    
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.about-row {
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.products-row {
+
+    grid-template-columns: repeat(4, 1fr);
+ }
+
+img {
+
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+/*** Navigation Styles ***/
+header {
+
+    text-align: center;
+    
+
+}
+
+header > h1 {
+
+    margin-top: 1em;
+}
+
+nav {
+
+    border-bottom: 1px solid #9ab4b5;
+}
+
+nav li {
+
+    display: inline-block;
+    margin-top: 2em;
+    padding: 1rem;
+    
+}
+
+nav a {
+
+    text-decoration: none;
+    color: #000;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+
+}
+
+nav a:hover{
+
+    color: rgb(201, 201, 201);
+}
+
+/** Main Images Section **/
+
+.main-image {
+
+    height: 550px;
+    width: 550px;
+    display: block;
+    margin-top: 2.5em;
+}
+
+
+/** About Images Section **/
+.about-image-making,
+.about-image-story,
+.about-image-commissions {
+
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 2.5em;
+    
+}
+
+.about-image-making {
+
+    background-image: url(./img/thomas-ae-602202-unsplash.jpg);  
+}
+
+.about-image-story {
+
+    background-image: url(./img/beatriz-perez-moya-191993-unsplash.jpg);
+}
+
+.about-image-commissions {
+
+    background-image: url(./img/tom-the-photographer-651516-unsplash.jpg);
+}
+.about-text {
+
+    position: relative;
+    top: 100px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    line-height: 50px;
+    width: 300px;
+    left: 75px;
+    color: #9ab4b5;
+    
+}
+
+
+.about-image-making > h3 > span {
+
+    color: rgb(177, 177, 177);
+    
+}
+
+
+/** Favourites Section Styles **/
+.favourites-title {
+
+    text-align: center;
+    margin-top: 5em;
+    padding: 2.5em;
+    line-height: 50px;
+    text-transform: uppercase;
+
+}
+
+.favourites-title > span {
+
+    text-transform: none;
+    color: #9ab4b5;
+}
+
+.products-row {
+
+    text-align: center;
+}
+
+.product-image {
+
+    width: 500px;
+    height: 300px;
+}
+
+.product-title {
+
+
+    line-height: 30px;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+    color: #000;
+    
+}
+
+.price {
+
+    color: #9ab4b5;
+}
+
+.sale {
+
+    text-decoration: line-through;
+    color:#000;
+}
+
+.westCliff-image {
+
+    position: relative;
+    display: inline-block;
+}
+.westCliff-image::before{
+
+    content: 'SALE';
+    border-radius: 500px;
+    background: #000;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    line-height: 100px;
+    color: #fff;
+    top: -50px;
+    left: 60px;
+
+}
+
+
+/*** Footer Styles ***/
+.footer {
+
+    border-top: 1px solid #9ab4b5;
+    border-bottom: 1px solid #9ab4b5;
+    margin-top: 5em;
+}
+.footer-content {
+
+    text-align: center;
+
+}
+
+.footer-content > ul > li {
+
+    display: inline-block;
+    padding: 1rem;
+
+}
+
+.footer-content > ul > li > a {
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #9ab4b5;
+
+}
+
+/*** Social Styles ***/
+.social-icons {
+
+    text-align: center;
+    margin-top: 2.5em;
+    padding: 2rem;
+}
+
+.icon {
+
+    color: #9ab4b5;
+    border: 1px solid #9ab4b5;
+    border-radius: 50%;
+    padding: .8rem;
+    margin: 1.5em;
+    
+}
+
+
+/** Copyright Styles **/
+.copyright{ 
+
+    text-align: center;
+
+}
+
+.copyright-header {
+
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #9ab4b5;
+}
+
+.copyright-sub {
+
+    text-transform: none;
+    font-style: italic;
+    color: #000;
+}

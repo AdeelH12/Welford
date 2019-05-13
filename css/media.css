@@ -1,0 +1,30 @@
+@media screen and (min-width: 320px){
+
+    .about-text {
+
+        left: 10px;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+
+    .westCliff-image::before {
+
+        left: 70px;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+    .about-text {
+
+        left: 45px;
+    }
+
+    .westCliff-image::before {
+
+        left: 85px;
+    }
+}
